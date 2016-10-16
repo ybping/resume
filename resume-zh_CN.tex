@@ -8,51 +8,62 @@
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
 
+
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{平亚斌}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{yabping@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 159-6818-3014} \textperiodcentered\ 
+  \linkedin[Yabin Ping]{https://www.linkedin.com/in/ping-yabin-a3225068?trk=nav_responsive_tab_profile}}
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{上海交通大学}, 上海, 上海}{2012.9 -- 2015.4}
+\textit{硕士}\ 计算机科学与技术
+\datedsubsection{\textbf{湖南农业大学}, 湖南, 长沙}{2007.9 -- 2011.6}
+\textit{学士}\ 计算机科学与技术
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+	\item 编程语言: 熟悉Python、Golang、C/C++。
+	\item 技能: 常用算法、Thrift、SOA、RabbitMQ、Celery、Redis、MySQL、PostgreSQL。
+	\item 课程: 操作系统、数据结构、计算机网络、数据库原理。
 \end{itemize}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+
+\section{\faUsers\ 实习/项目经历}
+\datedsubsection{\textbf{饿了么} 上海}{2015年5月 -- 至今}
+\role{物流系统搭建}{开发经理}
 \begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+	物流配送系统对打通上下游的关系、提升用户体验有着至关重要的的关系；目前该系统属于饿了么的一个核心平台。我参与的主要工作包括：
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item 分析业务架构进行领域拆分，设计应用架构和技术架构； 并主导实现了整个系统平台。
+  \item 基于soa架构实现各个服务，有服务注册、服务发现、服务管理、服务监控等功能。
+  \item 针对物流最后一公里的配送设计调度算法、LBS服务提供配送效率。
+  \item 目前正在做一些大数据和机器学习方面的工作。
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
+\datedsubsection{\textbf{微软}}{2014年4月 -- 2014年7月}
+\role{Azure计费管理模块}{实习生}
 \begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+该模块是一个网页功能模块，用来管理Azure云平台的一些计费功能，我参与的主要工作包括：
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item 基于SignalR技术，实现了服务器到客户端的推送，实时更新服务端的信息。
+  \item 解决了一些安全问题， 主要包括XSS、CSRF、SQL注入攻击等。
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{ 英特尔}}{2013 年7月 -- 2014年3月}
+\role{DPDK VirtIO}{实习生}
+\begin{onehalfspacing}
+DPDK是一个是一组快速处理数据包的开发平台及接口， 我参与的主要工作包括：
+\begin{itemize}
+  \item 研究DPDK的两个功能VirtIO和IVSHMEM；
+  \item 编写了一个自动化测试框架，实现自动测试基于母机、虚机的virtio功能。
 \end{itemize}
 \end{onehalfspacing}
 
@@ -63,24 +74,14 @@ xxx后端开发
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ IT 技能}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
-\end{itemize}
-
 \section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+\datedline{\textit{上海交通大学二等奖学金}}{2013年9月}
+\datedline{IEEE Globecom最佳论文提名奖}{2014年12月}
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item GitHub: https://github.com/yabping
 \end{itemize}
 
 %% Reference
