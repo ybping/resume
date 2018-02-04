@@ -28,32 +28,38 @@
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-	\item 编程语言: 熟悉Python、Golang、C/C++。
-	\item 技能: 常用算法、Thrift、SOA、RabbitMQ、Celery、Redis、MySQL、PostgreSQL。
-	\item 课程: 操作系统、数据结构、计算机网络、数据库原理。
+	\item 编程语言: 熟悉Python、Golang、C/C++、 C\#
+	\item 技能: Algorithms、Machine Learning, Thrift、SOA、RabbitMQ、Celery、Redis、MySQL、PostgreSQL
+	\item 课程: 算法设计与分析、基础代数、数论、密码学、操作系统、数据结构、计算机网络、数据库原理等
 \end{itemize}
 
 
 \section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{饿了么} 上海}{2015年5月 -- 至今}
-\role{物流系统搭建}{开发经理}
+
+\datedsubsection{\textbf{微软}}{2017年5月 -- 至今}
+\role{Azure Infrustructure Management Group}{高级软件开发工程师}
 \begin{onehalfspacing}
-	物流配送系统对打通上下游的关系、提升用户体验有着至关重要的的关系；目前该系统属于饿了么的一个核心平台。我参与的主要工作包括：
-\begin{itemize}
-  \item 分析业务架构进行领域拆分，设计应用架构和技术架构； 并主导实现了整个系统平台。
-  \item 基于soa架构实现各个服务，有服务注册、服务发现、服务管理、服务监控等功能。
-  \item 针对物流最后一公里的配送设计调度算法、LBS服务提供配送效率。
-  \item 目前正在做一些大数据和机器学习方面的工作。
-\end{itemize}
+	目前主要涉及的工作是AzureStack基础平台及其Service的监控组件AzureMonitor，我参与的主要工作包括：
+	\begin{itemize}
+		\item 把Agement搜集上报的时序数据进行有效的存储， 主要用到的技术是In-Memory Index, WAL, LSM等；
+		\item 基于SignalR技术，实现了服务器到客户端的推送，实时更新服务端的监控信息；
+		\item 分析服务间的Threat Model, 解决了一些安全问题， 主要包括认证、授权，XSS、CSRF、SQL注入攻击等；
+	\end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{微软}}{2014年4月 -- 2014年7月}
-\role{Azure计费管理模块}{实习生}
+\datedsubsection{\textbf{饿了么} 上海}{2015年5月 -- 2017-5}
+\role{物流系统搭建}{研发经理}
 \begin{onehalfspacing}
-该模块是一个网页功能模块，用来管理Azure云平台的一些计费功能，我参与的主要工作包括：
+	物流配送平台属于饿了么的一个核心平台，我参与的主要工作包括：
 \begin{itemize}
-  \item 基于SignalR技术，实现了服务器到客户端的推送，实时更新服务端的信息。
-  \item 解决了一些安全问题， 主要包括XSS、CSRF、SQL注入攻击等。
+ \item 参与分析业务架构进行领域拆分，设计应用架构和技术架构， 并主导实现了整个系统平台；
+  \item 基于微服务架构实现各个核心服务。\\1.  各个服务启动后自动向zookepper注册，客户端通过watch相应的服务端地址， 通过rpc通信 \\2. 为了服务健壮，会有服务端的心跳检测、限流、以及熔断等异常处理机制
+  \\3.  利用RabbitMQ主要用来解耦和消峰， Redis作为缓存，减少数据库的压力
+  \\4.  数据库MySQL做了分库分表来解决单库单表的连接数、读写压力等性能瓶颈问题
+  \item 针对物流最后一公里的配送设计调度算法， 这里主要用是设计多约束条件下的最优化问题以及对离线数据的模型训练，比如出餐时间预估、到店时间预估、订单-配送员压力平衡预估等模型；
+  \\ 1.  主要设计的技术有数据预处理、模型对比选择、超参数调优、初始化权重设计等
+  \item 针对在线调度算法主要研究开发了模拟退火算法、遗传算法，主要难点是超参数和遗传算子的设计；
+  \item 目前在研究一些Deep Learning和Reinforcement Learning方面的技术；
 \end{itemize}
 \end{onehalfspacing}
 
