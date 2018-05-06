@@ -39,10 +39,11 @@
 \datedsubsection{\textbf{微软}}{2017年5月 -- 至今}
 \role{Azure Infrustructure Management Group}{高级软件开发工程师}
 \begin{onehalfspacing}
-	目前主要涉及的工作是AzureStack基础平台及其Service的监控组件AzureMonitor，我参与的主要工作包括：
+	目前主要涉及的工作是AzureStack基础平台及其Service的监控平台AzureMonitor，包括Agent采集数据客户端， MDM(multi-dimension metrics)数据存储服务， GenevaRP查询服务。我参与的主要工作包括：
 	\begin{itemize}
-		\item 把Agement搜集上报的时序数据进行有效的存储， 主要用到的技术是In-Memory Index, WAL, LSM等；
-		\item 基于SignalR技术，实现了服务器到客户端的推送，实时更新服务端的监控信息；
+		\item 开发Agent metrics extension用于采集目标维度的时序数据；
+		\item 优化复杂multi-dimension数据的聚合查询， 优化时序数据的压存储、利用bucket方案解决多维度数据的数据倾斜问题等。
+		\item 开发Grafana Azure Monitor plugin,使得Grafana在为Azure Stack 提供支持。
 		\item 分析服务间的Threat Model, 解决了一些安全问题， 主要包括认证、授权，XSS、CSRF、SQL注入攻击等；
 	\end{itemize}
 \end{onehalfspacing}
